@@ -1,12 +1,15 @@
-# React + Vite
+# Морской клуб
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React (Vite) + Express + PostgreSQL.
 
-Currently, two official plugins are available:
+## Запуск
+1. В PostgreSQL выполните database.sql в БД SP_ya.
+2. backend: cd backend, npm install, npm run dev
+3. frontend: npm install, npm run dev (http://localhost:5173)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Тестовые аккаунты
+- Клиент: client@shop.ru / client123
+- Админ: admin@shop.ru / admin123
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Восстановление пароля
+Письма не отправляются. Ссылка для смены пароля показывается на странице (SHOW_RESET_LINK=true в backend/.env) и печатается в консоли backend.
